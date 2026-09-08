@@ -11,4 +11,3 @@ package:
 
 install: package
 	gnome-extensions install --force dist/$(UUID).shell-extension.zip
-	gnome-extensions enable $(UUID)

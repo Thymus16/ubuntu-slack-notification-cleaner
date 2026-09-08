@@ -8,12 +8,15 @@ Why Slack? Slack's Linux client leaves desktop notifications and badges until ma
 ## Install
 
 ```bash
-curl -fL https://github.com/Thymus16/ubuntu-slack-notification-cleaner/releases/latest/download/ubuntu-slack-notification-cleaner%40thymus16.github.io.shell-extension.zip -o ubuntu-slack-notification-cleaner.zip
-gnome-extensions install --force ubuntu-slack-notification-cleaner.zip
-gnome-extensions enable ubuntu-slack-notification-cleaner@thymus16.github.io
+curl -fL https://github.com/Thymus16/ubuntu-slack-notification-cleaner/releases/latest/download/ubuntu-slack-notification-cleaner%40thymus16.github.io.shell-extension.zip -o ubuntu-slack-notification-cleaner@thymus16.github.io.shell-extension.zip
+gnome-extensions install --force ubuntu-slack-notification-cleaner@thymus16.github.io.shell-extension.zip
 ```
 
-If GNOME does not discover a newly installed extension immediately under Wayland, log out and back in, then run the enable command again.
+Log out and back in so GNOME Shell discovers the extension, then enable it:
+
+```bash
+gnome-extensions enable ubuntu-slack-notification-cleaner@thymus16.github.io
+```
 
 ## Manual build
 
@@ -23,6 +26,8 @@ cd ubuntu-slack-notification-cleaner
 make check
 make install
 ```
+
+Log out and back in, then run the enable command shown above.
 
 ## Remove
 
