@@ -1,0 +1,7 @@
+{
+  "name": "Ubuntu Slack Notification Cleaner",
+  "description": "Clears persistent Slack notifications when a Slack window gains focus.",
+  "uuid": "ubuntu-slack-notification-cleaner@thymus16.github.io",
+  "shell-version": ["50"],
+  "url": "https://github.com/Thymus16/ubuntu-slack-notification-cleaner"
+}
